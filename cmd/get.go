@@ -29,7 +29,7 @@ to quickly create a Cobra application.`,
 		if len(args) >= 1 && args[0] != "" {
 			gopherName = args[0]
 		}
-		URL := "https://github.com/ekonuma/gopher-cli/raw/main/res/" + gopherName + ".png"
+		URL := "https://github.com/ekonuma/gopher-cli/raw/main/res/" + gopherName + ".jpg"
 
 		fmt.Println("Try to get '" + gopherName + "' Gopher...")
 
@@ -37,7 +37,7 @@ to quickly create a Cobra application.`,
 		response, err := http.Get(URL)
 		if err != nil {
 			fmt.Println(err, "Image not found")
-			URL := "https://github.com/ekonuma/gopher-cli/raw/main/res/ohNo.png"
+			URL := "https://github.com/ekonuma/gopher-cli/raw/main/res/ohNo.jpg"
 			response, _ = http.Get(URL)
 		}
 		defer response.Body.Close()
