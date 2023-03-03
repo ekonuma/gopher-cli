@@ -29,7 +29,7 @@ to quickly create a Cobra application.`,
 		if len(args) >= 1 && args[0] != "" {
 			gopherName = args[0]
 		}
-		URL := "https://github.com/scraly/gophers/raw/main/" + gopherName + ".png"
+		URL := "https://github.com/ekonuma/gopher-cli/raw/main/res/" + gopherName + ".png"
 
 		fmt.Println("Try to get '" + gopherName + "' Gopher...")
 
